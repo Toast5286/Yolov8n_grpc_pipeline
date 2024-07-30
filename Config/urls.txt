@@ -1,3 +1,2 @@
 gradioService:8061
 yoloService:8061
-yoloImgService:8061
