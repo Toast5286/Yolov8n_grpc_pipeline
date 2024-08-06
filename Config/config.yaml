@@ -6,7 +6,7 @@ stages:
   - name: "yoloTrack"
     host: yoloService
     port: 8061
-    method: predict
+    method: track
   - name: "yoloPlot"
     host: yoloService
     port: 8061
@@ -34,3 +34,9 @@ links:
       stage: "yoloPlot"
     target:
       stage: "Visualization"
+      field: "img"
+  - source:
+      stage: "yoloTrack"
+    target:
+      stage: "Visualization"
+      field: "file"
