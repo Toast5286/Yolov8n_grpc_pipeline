@@ -1,2 +1,0 @@
-gradioService:8061
-yoloService:8061
