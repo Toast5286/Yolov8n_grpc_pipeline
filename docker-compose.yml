@@ -8,10 +8,13 @@ services:
     image: gradio_grpc
     ports:
     - "7860:7860"
+    restart: always
   yoloService:
     image: yolo_grpc
+    restart: always
   orchestrator-node:
     image: sipgisr/grpc-orchestrator:latest
+    restart: always
     volumes: 
     - type: bind
       source: ./Config
